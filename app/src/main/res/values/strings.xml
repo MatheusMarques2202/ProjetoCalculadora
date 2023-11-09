@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Projeto Calculadora</string>
+    <string name="Gorjeta">Calculadora de gorjeta</string>
+    <string name="valorGorjeta">valor total %s</string>
+</resources>
