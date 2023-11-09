@@ -87,9 +87,9 @@ fun calcularGorjeta(){
             onValueChange = {porcentagemGorjeta = it},
             label = {
                 Text(
-                    text = "% gorjeta"
+                    text = "% gorjeta "
                 )
- 
+
             },
             isError = false,
             shape = RectangleShape,
