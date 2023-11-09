@@ -1,6 +1,5 @@
 package com.example.projetocalculadora
 
-import android.graphics.drawable.Icon
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -76,14 +75,16 @@ fun AppCalculadorDeGorjeta() {
             value = totalConta,
             onValueChange = { totalConta = it },
             idTexto = R.string.valorGorjeta,
-            imeAction = ImeAction.Next
+            imeAction = ImeAction.Next,
+            R.drawable.dolar
         )
 
         CampoDeTexto(
             value = porcentagemGorjeta,
             onValueChange = { porcentagemGorjeta = it },
             idTexto = R.string.valorGorjeta,
-            imeAction = ImeAction.Done
+            imeAction = ImeAction.Done,
+            R.drawable.percent
         )
 
         Row(
@@ -144,7 +145,7 @@ fun CampoDeTexto(
     TextField(
         value = value,
         onValueChange = onValueChange,
-        leadingIcon = { Icon( painter = painterResource(id = iconeCampoTexto)) },
+        leadingIcon = { Icon( painter = painterResource(id = iconeCampoTexto),null) },
         label = {
             Text(text = stringResource(id = idTexto))
         },
